@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : main_responsive.css
+ * description : 메인 레이아웃 및 컨텐츠 반응형 CSS
+ * date : 2020-11-25
+******************************************************** */
+
+/* ******************  메인 비주얼 ********************** */
+@media all and ( max-width: 1830px ){	
+	/* 메인 비주얼 :: 화살표 */
+	.main-visual-arrow a.prev{left:1.5rem;}
+	.main-visual-arrow a.next{right:1.5rem;}
+	.main-visual-arrow .prev-circle.active{left:-180rem}
+	.main-visual-arrow .next-circle.active{right:-180rem}
+}
+@media all and ( max-width: 1630px ){	
+	/* 메인 비주얼 :: 화살표 */
+	.main-visual-arrow a .txt{display:none}
+	.main-visual-arrow .prev-circle.active{left:-189rem}
+	.main-visual-arrow .next-circle.active{right:-189rem}
+}
+@media all and ( max-width: 1440px ){	
+	/* 메인 비주얼 :: 텍스트 */
+	.main-visual-item .main-visual-txt-inner{padding-left:7.8rem}
+	/* 메인 비주얼 :: 화살표 */
+	.main-visual-arrow .hover-circle{display:none}
+	/* 메인 비주얼 :: Dots */
+	.main-visual-dot .main-visual-dot-inner{padding-left:7.8rem}
+}
+@media all and ( max-width: 1024px ){	
+	/* 메인 비주얼 :: 텍스트 */
+	.main-visual-item .main-visual-txt-con{top:13%; height:auto}
+	.main-visual-item .main-visual-txt-box{display:block; height:auto; }
+	.main-visual-item .main-visual-txt-inner{margin-top:0; padding-left:0}
+	/* 메인 비주얼 :: 화살표 */
+	.main-visual-arrow{width:15rem; height:auto; top:auto; bottom:0; margin-bottom:6.5%; left:auto; right:15px; text-align:right}
+	.main-visual-arrow a{position:relative; top:auto; transform:translateY(0); display:inline-block !important; font-size:3rem}
+	.main-visual-arrow a.prev{left:auto; margin-right:0.5rem}
+	.main-visual-arrow a.next{right:auto}
+	/* 메인 비주얼 :: Dots */
+	.main-visual-dot{top:auto; margin:0 0 8% 0; bottom:0}
+	.main-visual-dot .main-visual-dot-inner{padding-left:0}
+
+}
+@media all and ( max-width: 480px ){
+	/* 메인 비주얼 :: 텍스트 */
+	.main-visual-item .main-visual-txt-con .main-visual-txt1{font-size:2.3rem; margin-bottom:3rem}
+	.main-visual-item .main-visual-txt-con .main-visual-txt2{font-size:5rem}
+	/* 메인 비주얼 :: 화살표 */
+	.main-visual-arrow a .arrow{width:5.5rem; height:5.5rem}
+	.main-visual-arrow a .arrow i{line-height:5.5rem}
+
+}
+
+/* ******************  메인 컨텐츠 ********************** */
+/* -------- 메인 컨텐츠 :: 공통 -------- */
+@media all and ( max-width: 480px ){
+	/* 공통 :: 타이틀 */
+	.main-tit-box .main-tit{font-size:4.8rem}
+	.main-tit-box .main-tit:after{width:4rem; height:6rem; right:-5.5rem}
+	.main-tit-box .main-sub-tit{font-size:2.1rem}
+}
+
+/* -------- 메인 컨텐츠 :: 컨텐츠1(PORTFOLIO) -------- */
+@media all and ( max-width: 1440px ){	
+	.portfolio-list .portfolio-box .portfolio-txt .tit{top:9%}
+	.portfolio-list .portfolio-box .portfolio-txt .txt{margin-top:56%}
+	.portfolio-list .portfolio-box .portfolio-img:after{width:15vw; height:15vw; box-shadow:0px 0px 0px 15vw #fff}
+}
+@media all and ( max-width: 1220px ){	
+	.main-portfolio-con{padding:5rem 1.4rem 11rem}
+	.portfolio-list .portfolio-box .portfolio-img:after{width:20vw; height:20vw; box-shadow:0px 0px 0px 20vw #fff}
+	.portfolio-list .portfolio-box .portfolio-txt .tit{font-size:1.8rem}
+	.portfolio-list .portfolio-box .portfolio-txt .txt{font-size:1.5vw}
+}
+@media all and ( max-width: 800px ){	
+	#mainPortfolio{padding:11rem 0}
+	.main-portfolio-con{overflow:visible; padding:4rem 3.5rem 9rem}
+	.portfolio-list .portfolio-box .portfolio-img:after{width:28vw; height:28vw; box-shadow:0px 0px 0px 28vw #fff}
+	.portfolio-list .portfolio-box .portfolio-txt .tit{font-size:2rem}
+	.portfolio-list .portfolio-box .portfolio-txt .txt{font-size:1.8rem}
+}
+@media all and ( max-width: 480px ){	
+	.portfolio-list .portfolio-box .portfolio-img:after{width:50vw; height:50vw; box-shadow:0px 0px 0px 50vw #fff}
+	.portfolio-list .portfolio-box.swiper-slide-active{transform:scale(1.07)}
+}
+
+
+/* -------- 메인 컨텐츠 :: 컨텐츠2(NEWS & EVENT) -------- */
+@media all and ( max-width: 960px ){	
+	.main-news-con{padding:0 1.4rem 11rem}
+}
+@media all and ( max-width: 800px ){	
+	#mainNewsEvent:after{width:22rem; height:15rem;}
+	.main-news-con{overflow:visible; margin-top:4rem; padding:0 1em 9rem}
+}
+@media all and ( max-width: 480px ){	
+	#mainNewsEvent{padding:11rem 0}
+	#mainNewsEvent:after{width:17rem; height:12rem;}
+}
+
+/* -------- 메인 컨텐츠 :: 컨텐츠3(CONTACT US) -------- */
+@media all and ( max-width: 800px ){	
+	#mainContactCon{padding:11rem 0}
+}

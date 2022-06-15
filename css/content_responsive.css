@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : content_responsive.css
+ * description : 서브페이지 컨텐츠 반응형 CSS
+ * date : 2020-11-25
+******************************************************** */
+
+
+/* ******************  서브공통 ********************** */
+/* -------- 공통 스크롤바  -------- */
+@media all and (max-width:1220px){
+	.custom-scrollbar-wrapper .scroll-object{max-width:100%;}
+}
+@media all and (max-width:800px){
+	.custom-scrollbar-wrapper{position:relative;margin-right:-15px; cursor:move}
+	.custom-scrollbar-wrapper .scroll-object{max-width:none; width:800px; }
+	.custom-scrollbar-cover{display:block; position:absolute; top:0px; left:0px; right:0px; bottom:0px; background-color:rgba(0,0,0,0.5)}
+	.custom-scrollbar-cover .scroll-cover-txt{position:absolute; top:50%; left:0; width:100%; text-align:center; color:#fff; font-size:300; font-size:15px;}
+	.custom-scrollbar-cover .scroll-cover-txt i{font-size:30px; display:block; margin-bottom:20px; }
+}
+
+/* -------- 공통 :: 탭 -------- */
+@media all and (max-width:1220px){
+	.sub-tab-list-style .area{padding:0}
+}
+@media all and (max-width:1024px){
+	/* Tab Fixed Move*/
+	.sub-tab-list-style.top-fixed{top:80px;}
+}
+@media all and ( max-width: 800px ){
+	/* Tab 공통 스타일 */
+	.sub-tab-wrapper-style,
+	.sub-tab-list-style ul li{height:5rem}
+	.sub-tab-list-style ul li{max-width:20rem; margin:0 1px; width:calc(33.333% - 5px)}
+	/* Tab Fixed Move*/
+	/* Mobile Tab Drop Menu */
+	.sub-drop-menu-style{position:relative;}
+	.sub-drop-open-btn-style{display:block; position:relative; padding:0 15px; height:40px; line-height:40px; font-size:15px; background-color:#333; box-sizing:border-box;}
+	.sub-drop-open-btn-style span{color:#fff; }
+	.sub-drop-open-btn-style .arrow{color:#fff; position:absolute; top:50%; right:15px; margin-top:-7px}
+	.sub-drop-open-btn-style.open .arrow{transform:rotate(180deg)}
+	.sub-drop-menu-style ul{display:none; margin:0; height:auto; position:absolute; top:100%; left:0px; right:0px; background-color:#fff; border:1px solid #ddd; border-top:0; z-index:11; box-sizing:border-box;}
+	.sub-drop-menu-style ul li{position:static; display:block; float:none; border:0; border-top:1px solid #eee; width:auto; background-color:transparent}
+	.sub-drop-menu-style ul li:first-child{border-top:0; border-left:0}
+	.sub-drop-menu-style ul li a{display:block; width:auto; height:auto; padding:10px 15px; border:0;}
+	.sub-drop-menu-style ul li a em{font-size:13px;}
+	.sub-drop-menu-style ul li.selected a{background-color:transparent;}
+	.sub-drop-menu-style ul li.selected a em{color:#f57f20; font-weight:600; }
+}
+@media all and (max-width:480px){
+	/* Tab Fixed Move*/	
+	.sub-tab-list-style.top-fixed{top:60px;}
+}
+
+/* ******************  회사소개 ********************** */
+@media all and (max-width:1220px){		
+	/* 상단텍스트,이미지 */
+	.company-top .top-txt{padding:0 4rem}
+}
+@media all and (max-width:960px){		
+	/* 상단텍스트,이미지 */
+	.company-top .top-txt dt{width:23rem}
+	.company-top .top-txt dd{padding-left:4%}
+	/* 하단텍스트,이미지 */
+	.company-bt{padding:2rem 0 0}
+	.company-bt .bt-txt p.pd-rt{padding-right:0}
+	.company-bt .bt-txt p.txt-img{max-width:none}
+	.company-bt .bt-img{position:relative; right:auto; text-align:center; width:100%; padding-top:5%}
+}
+@media all and (max-width:800px){
+	/* 상단텍스트,이미지 */
+	.company-top .top-txt{padding:0 1.5rem; display:block}
+	.company-top .top-txt dt, .company-top .top-txt dd{display:block}
+	.company-top .top-txt dt{width:auto; font-size:5rem}
+	.company-top .top-txt dt b:before{width:5rem; height:3rem; left:-1.5rem; top:-2.5rem}
+	.company-top .top-txt dd{padding:2rem 0 0; font-size:1.9rem; line-height:1.8}
+	.company-top .top-txt dd:before{display:none}
+	/* 하단텍스트,이미지 */
+	.company-bt .bt-txt p{margin-top:2rem}
+	.company-bt .bt-txt p.txt-img img{height:24px}
+}
+
+
+
+/* ******************  사업소개 ********************** */
+@media all and (max-width:1366px){	
+	.business-sec.rt-deco:after{width:22rem; height:31rem; top:-20rem}
+	.business-sec.lf-deco:after{width:19rem; height:37rem}
+}
+@media all and (max-width:1260px){	
+	.business-page{padding-bottom:70px}
+}
+@media all and (max-width:960px){	
+	.business-sec{margin-bottom:8rem}
+	.business-sec.rt-deco:after,
+	.business-sec.lf-deco:after{display:none}
+	.business-sec .business-inner{display:block; margin:0}
+	.business-sec.blue .business-inner{display:flex; flex-direction:column-reverse}
+	.business-sec .business-inner > div{width:100%; margin:0 auto; overflow:hidden}
+	.business-sec .bs-slide-con{max-width:640px; padding-top:2.5rem}
+	.business-sec .bs-txt-con dl dt{padding-bottom:1.3rem}
+	.business-sec .bs-txt-con dl dd{padding-top:0}
+}
+@media all and (max-width:800px){	
+	.business-page{padding-bottom:50px}
+	.business-sec{margin-bottom:6rem}
+	.business-sec .bs-txt-con dl dt{font-size:3.2rem; padding-left:5.3rem}
+	.business-sec .bs-txt-con dl dt b{font-size:3.8rem; top:-4px}
+	.business-sec .bs-slide-con .bs-img-slide .slick-dots{margin-top:1rem}
+}
+
+
+/* ****************** 포트폴리오 ********************** */
+@media all and (max-width:800px){		
+	.portfolio-page .portfolio-list .portfolio-box{width:47%}
+}
+@media all and (max-width:480px){		
+	.portfolio-page .portfolio-list{margin:0 0 -4%}
+	.portfolio-page .portfolio-list .portfolio-box{width:100%; margin:0 0 4%}
+	.portfolio-page .portfolio-list .portfolio-box .portfolio-img:after{width:65vw.height:65vw; box-shadow:0px 0px 0px 65vw #fff}
+}
+
+
+
+/* ****************** 뉴스/이벤트 ********************** */
+@media all and (max-width:800px){	
+	.news-page .news-list li{width:48%}
+}
+@media all and (max-width:480px){		
+	.news-page .news-list{margin:0}
+	.news-page .news-list li{width:100%; margin:0 0 3rem}
+}
+
+
+
+
+
+/* ****************** 채용안내 ********************** */
+@media all and (max-width:1024px){
+	/* HRD */
+	.person-hrd-box .hrd-list li{width: calc(50% - 12px); padding: 15px; margin-bottom: 100px}
+	.person-hrd-box .hrd-list li:nth-child(3), .person-hrd-box .hrd-list li:nth-child(4){margin-bottom: 0}
+}
+@media all and (max-width:800px){	
+	/* 탭스타일 */
+	.sub-tab-wrapper-style-02{padding-top:1rem}
+	/* 공통 스타일 */
+	.recruit-con-wrap{padding-top:5rem}
+	/* 직급체계 */
+	.person-page .white-space-bottom{margin-bottom: 60px}
+	.person-page .person-tit{margin-bottom: 15px; font-size: 26px}
+	.person-page .person-txt{margin-bottom: 20px; font-size: 14px; line-height: 1.6}
+	.person-page .con-sub-tit{font-size: 17px}
+	.person-page .con-sub-gray-txt{font-size: 14px; line-height: 1.6}
+	.person-system-box .tit{margin-bottom: 15px; font-size: 18px}
+	.person-system-box .system-list{margin: -5px}
+	.person-system-box .system-list li{width: calc(33.33% - 10px); margin: 5px}
+	.person-system-box .system-list li .list-txt{bottom: 21px; font-size: 17px}
+	/* 평가와 보상 */
+	.person-evaluation-box, .person-welfare-box{padding: 50px 0}
+	.person-evaluation-box .evaluation-img-box{margin: 0 auto 20px; height: 0; padding-top: 50%}
+	.person-evaluation-box .evaluation-list-box{padding: 20px 0; background: #fff url("/images/content/person_point_bg.png") 110% no-repeat; background-size: contain}
+	.person-evaluation-box .evaluation-list li{width: calc(50% - 61px); padding: 0 30px}
+	/* HRD */
+	.person-hrd-box .hrd-list{margin-top: 60px}
+	.person-hrd-box .hrd-list li{margin-bottom: 50px}
+	.person-hrd-box li::before{width: 80px; height: 80px; top: -40px}
+	.person-hrd-box .hrd-list .list-tit{padding: 40px 0 20px}
+	/* 복리후생 */
+	.person-page .person-welfare-box .person-tit{margin-bottom: 25px}
+	.person-welfare-box .welfare-list{margin: -10px 0;}
+	.person-welfare-box .welfare-list li{width: 100%; margin: 10px 0; padding: 20px}
+	.person-welfare-box .welfare-list li::before{width: 80px}
+	.person-welfare-box .welfare-list .list-tit{padding-bottom: 15px; font-size: 16px}
+	.person-welfare-box .welfare-list .list-txt{padding: 15px 0}
+
+}
+@media all and (max-width:640px){
+	/* 직급체계 */
+	.person-system-box .system-list{margin: 0}
+	.person-system-box .system-list li{width: 100%; margin-bottom: 10px}
+	/* 평가와 보상 */
+	.person-evaluation-box .evaluation-list{flex-direction: column}
+	.person-evaluation-box .evaluation-list-box{background: #fff url("/images/content/person_point_bg.png") 160% no-repeat; background-size: contain}
+	.person-evaluation-box .evaluation-list li{width: 100%; padding: 0 20px; margin-bottom: 20px;box-sizing: border-box;}
+	.person-evaluation-box .evaluation-list li:last-child{margin-bottom: 0}
+	/* HRD */
+	.person-hrd-box .hrd-list li{width: 100%}
+	.person-hrd-box .hrd-list li:nth-child(3){margin-bottom: 50px;}
+	.person-hrd-box li::before{width: 80px; height: 80px; top: -40px}
+	.person-hrd-box .hrd-list .list-tit{padding: 40px 0 20px}
+}
+
+
+@media all and (max-width:1220px){
+	/* 채용절차 */
+	.recruit-process-box .process-list li dt::after{right: auto; left:100%; margin-left:28px;}
+}
+@media all and (max-width:1024px){
+	.info-column-con .info-lt-tit{padding-left: 0}
+	/* 채용절차 */
+	.recruit-process-box .process-list li dt::after{right: -23%; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 10px solid transparent; border-left: 10px solid #a5a5a5}
+}
+@media all and (max-width:800px){
+	/* 공통 스타일 */
+	.front-cir-icon-tit{margin-bottom:10px; padding-left: 25px; font-size: 18px}
+	.front-cir-icon-tit i {top: 1px; width: 20px; height: 20px; font-size: 13px}
+	.front-circle-icon, .front-dash-icon{font-size: 13px; padding-left: 6px; line-height: 1.6}
+	.front-circle-icon::before{top: 8px}
+	.front-dash-icon::before{top: -2px; font-size: 13px; line-height: 1.6}
+	/* 채용공고 */
+	.info-column-con{padding: 25px 0}
+	.info-column-con .info-lt-tit strong{font-size: 18px}
+	.recruitment-box .recruitment-tit{margin-bottom: 25px; font-size: 21px}
+	.recruitment-box .bbs-top-list-box{margin-bottom: 0}
+	.recruitment-box .total-list-con{font-size: 13px}
+	.recruitment-box .bbs-list-style02 .bbs-item .bbs-list-date{display: none}
+	.recruitment-box .bbs-list-style02 .bbs-item .bbs-list-info-con{margin: 0}
+	.recruitment-box .bbs-list-style02 .bbs-item .bbs-subject-txt-box{width: 95%}
+	.recruitment-box .bbs-list-style02 .bbs-item .bbs-subject-txt{font-size: 15px; margin-bottom: 0}
+	.recruitment-box .bbs-list-style02 .category-txt{font-size: 13px}
+	.recruitment-box .paging a{font-size: 11px}
+	/* 직무소개 */
+	.info-column-con .info-rt-con th, .info-column-con .info-rt-con td{padding: 12px; font-size: 13px}
+	.info-column-con .info-rt-con th{width: 150px}
+	.info-column-con .info-rt-con .job-intro-info{padding: 20px 0}
+	.info-column-con .info-rt-con .job-intro-info .front-circle-icon::before{top: 10px}
+	.info-column-con .info-rt-con .job-intro-info li{font-size: 13px; padding-left: 80px}
+	.info-column-con .info-rt-con .job-intro-info li em{font-size: 15px; top: 0}
+	.info-column-con .info-rt-con .front-circle-icon::before{top: 11px}
+	.img-with-txt-slide-wrap{padding: 0 30px}
+	.img-with-txt-slide li dl dt{font-size: 16px; margin: 10px 0 0}
+	.img-with-txt-slide li dl dd{font-size: 13px}
+	.img-with-txt-slide-lt-btn{left: -5px}
+	.img-with-txt-slide-rt-btn{right: -5px}
+	.intro-yikc-box{padding: 35px 0}
+	.intro-yikc-box .intro-tit{margin-bottom: 25px; font-size: 23px}
+	/* 채용절차 */
+	.recruit-process-box .process-list{padding: 20px 0}
+	.recruit-process-box .process-list li dt::after{top: 15px;  border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-right: 8px solid transparent; border-left: 8px solid #a5a5a5}
+	.recruit-process-box .process-list li dt{margin: 10px auto 10px; height: 40px; line-height: 40px; border-radius: 40px; font-size: 16px}
+	.recruit-process-box .process-list li dd{font-size: 13px}
+	.center-txt-shadow-box{padding: 12px; font-size: 13px}
+}
+@media all and (max-width:640px){
+	.info-column-con .info-lt-tit{margin-bottom: 10px}
+	.info-column-con .info-lt-tit, .info-column-con .info-rt-con{float: none; width: 100%;}
+	/* 직무소개 */
+	.info-column-con .info-rt-con .job-intro-info{border-bottom: 0; padding-bottom: 0; flex-wrap: wrap}
+	.info-column-con .info-rt-con .job-intro-info li{width: 100%}
+	.info-column-con .info-rt-con .job-intro-info li em{top: -2px}
+	/* 채용절차 */
+	.recruit-process-box .process-list{margin:0 -20px}
+	.recruit-process-box .process-list li{width: calc(50% - 40px); margin: 20px}
+	.recruit-process-box .process-list li dt::after{}
+	.recruit-process-box .process-list li:nth-child(2) dt::after{content:none}
+	.recruit-process-box .process-list li dt {position:static;}
+	.recruit-process-box .process-list li dl {position:relative;}
+	.recruit-process-box .process-list li dt::after {right: 0; left: auto; margin-left: 0; margin-right: -33px;}
+}
+@media all and (max-width:480px){	
+	/* 채용공고 */
+	.recruitment-box .bbs-list-style02 .bbs-item .bbs-right-info-con{border-radius: 100%}
+}
+
+
+
