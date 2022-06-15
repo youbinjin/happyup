@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>해피업</title>
+
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/layout_responsive.css">
+    <link rel="stylesheet" href="../css/content_responsive.css">
+    <link rel="stylesheet" href="../css/main_responsive.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/xeicon.min.css">
+
+    <!-- Board Skin -->
+    <link rel="stylesheet" href="../css/common/cm_bbs_common.css">
+    <link rel="stylesheet" href="../css/common/cm_board.css">
+    <link rel="stylesheet" href="../css/common/cm_gallery.css" />
+    <link rel="stylesheet" href="../css/common/cm_online.css" />
+
+    <!-- Plugin -->
+    <link rel="stylesheet" type="text/css" href="../css/plugin/slick.css">
+    <link rel="stylesheet" type="text/css" href="../css/plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/plugin/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="../css/plugin/swiper.css" />
+
+    <script type="text/javascript" src="../js/vendor/jquery-1.8.3.min.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header" class="top-fixed-object">
+            <div class="gnb-overlay-bg"></div>
+            <div id="headerInnerWrap">
+                <!-- ****************** 헤더상단 ********************** -->
+                <div id="headerInner" class="clearfix">
+                    <h1 class="logo"><a href="../index.html"><em class="blind">메인으로</em><img src="../images/common/logo.png" alt="해피업" /></a></h1>
+                    <div class="header-util-box">
+                        <!-- 사이트맵 버튼 ( 기본 ) -->
+                        <button class="sitemap-line-btn sitemap-open-btn" title="사이트맵 열기" data-event="toggle">
+                            <i class="xi-bars"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- ****************** GNB ********************** -->
+                <!-- GNB PC  -->
+                <nav id="gnb" class="each-menu">
+                    <h2 class="blind">주메뉴</h2>
+                    <ul class="clearfix area">
+                        <li class="gnb1">
+                            <a href="../company/intro.html">회사소개</a>
+                        </li>
+                        <li class="gnb2">
+                            <a href="../business/intro.html">사업소개</a>
+                        </li>
+                        <li class="gnb3">
+                            <a href="../portfolio/portfolio.html">포트폴리오</a>
+                        </li>
+                        <li class="gnb4">
+                            <a href="../news/news.html">뉴스/이벤트</a>
+                        </li>
+                        <li class="gnb5">
+                            <a href="../recruit/recruit.html">채용안내</a>
+                        </li>
+                        <li class="gnb6">
+                            <a href="../customer/inquiry.html">온라인 문의</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- GNB Mobile -->
+            <button class="nav-open-btn" title="네비게이션 열기">
+                <i class="xi-bars open"></i><i class="xi-close close"></i>
+            </button>
+            <div class="gnb-overlay-bg-m"></div>
+            <nav id="gnbM" class="gnb-style-full">
+                <h2 class="blind">주메뉴</h2>
+                <div class="gnb-navigation-wrapper">
+                    <div class="gnb-navigation-inner">
+                        <ul id="navigation" data-menu-clone="true"></ul><!-- PC메뉴 같을때 true / 같지않으면 false 후 메뉴삽입 -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="sitemapContent03">
+            <article id="sitemapInnerCon">
+                <div class="sitemap-bg-box"></div>
+                <article class="sitemap-wrapper-style03">
+                    <ul>
+                        <li><a href="../company/intro.html"><span>회사소개</span></a></li>
+                        <li><a href="../business/intro.html"><span>사업소개</span></a></li>
+                        <li><a href="../portfolio/portfolio.html"><span>포트폴리오</span></a></li>
+                        <li><a href="../news/news.html"><span>뉴스/이벤트</span></a></li>
+                        <li><a href="../recruit/recruit.html"><span>채용안내</span></a></li>
+                        <li><a href="../customer/inquiry.html"><span>온라인 문의</span></a></li>
+                    </ul>
+                </article>
+            </article>
+            <button class="sitemap-close-btn" title="닫기"><i class="xi-close"></i></button>
+        </section>
+        <!-- //header -->
+
+        <div id="container">
+            <!-- visual -->
+            <section id="visual" class="sub-visual-company">
+                <div class="visual-img-con" style="background:#eee url(../images/layout/sub_visual_recruit.jpg) no-repeat 50% 0%"></div>
+                <div class="area visual-txt-con">
+                    <div class="table-cell-layout">
+                        <div class="visual-txt-container">
+                            <h2 class="visual-tit trans400">
+                                채용안내
+                            </h2>
+                            <p class="visual-sub-txt">WHO WE ARE & WHAT WE DO</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //visual -->
+            <!-- middleArea -->
+    		<div id="middleArea">
+                <section id="content" class="area">
+                    <!-- ****************** 상단정보 ********************** -->
+                    <aside id="contentInfoCon" class="area" data-scroll="fade-up">
+                        <h3 class="content-tit">recruit</h3>
+                    </aside>
+
+                    <article class="recruit-page" data-scroll="fade-up">
+                        <aside class="sub-tab-wrapper-style">
+                            <div class="sub-tab-list-style">
+                                <ul class="clearfix">
+                                    <li class="selected"><a href="../recruit/recruit.html"><em>직무소개</em></a></li>
+                                    <li><a href="../recruit/recruit_02.html"><em>채용절차</em></a></li>
+                                    <li><a href="../recruit/recruit_03.html"><em>채용공고</em></a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                
+                        <section class="cm-tab-container-JS">
+                            <aside class="sub-tab-wrapper-style-02">
+                                <div class="sub-tab-list-style-02 cm-tab-list-JS">
+                                    <ul class="clearfix">
+                                        <li class="selected"><a href="#tabCon01"><em>연구개발(R&D)</em></a></li>
+                                        <li><a href="#tabCon02"><em>영업</em></a></li>
+                                        <li><a href="#tabCon03"><em>SCM</em></a></li>
+                                        <li><a href="#tabCon04"><em>경영지원</em></a></li>
+                                        <li><a href="#tabCon05"><em>제조</em></a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                            <article class="sub-tab-content-style cm-tab-content-wrapper-JS recruit-con-wrap">
+                                <div class="sub-tab-con" id="tabCon01">
+                                    <div class="white-space-bottom">
+                                        <h5 class="front-cir-icon-tit"><i class="xi-angle-right-min"></i>연구개발(R&D)</h5>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>Hardware</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>컨셉 설계</th>
+                                                        <td>상품 기획, 구조 설계, 시스템 설계</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>보드 설계</th>
+                                                        <td>회로 설계, PCB Atwork, Logic 설계(프로그램 설계)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>보드 제작 및 평가(PCB/SMT)</th>
+                                                        <td>PCB 사양 관리, SMT, 보드 평가(Barrack 평가)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>시스템 제작 및 평가</th>
+                                                        <td>시스템 평가, 제품 평가</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>유지 보수</th>
+                                                        <td>구설비 대응, 대체품 검토, 제조 및 양산 대응, 업그레이드</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>H/W 그룹</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>전자·전기공학, 반도체공학, 회로이론</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>Software</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>요구 분석</th>
+                                                        <td>문제점, 요구사항, 업무 부석 및 요소기능 분석, 타당성 검토</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>설계</th>
+                                                        <td>사양서작성, 프로그램 설계</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>구현</th>
+                                                        <td>프로그램 코딩, 시스템 개선</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>검사</th>
+                                                        <td>개발자 검사, 보완, 성능검사, 검증</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>운영 및 유지보수</th>
+                                                        <td>매뉴얼 및 교육 자료, 문의 대응</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>S/W 그룹</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>컴퓨터공학, 전자·전기공학</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>기구설계</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>기구</th>
+                                                        <td>설계, 초도제작, 평가, 기술지원(유지보수)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>전장</th>
+                                                        <td>설계, 초도제작, 평가, 기술지원(유지보수)</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>기계설계그룹</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>기계공학, 전자 · 전기공학</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>SE</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>신규설비 개발 지원</th>
+                                                        <td>검증 항목 선정 및 프로그램 작성, User 검증보고서, Manual 작성, 개발 BMT</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Customer Support</th>
+                                                        <td>Trouble Shooting, User 양산 Program setup(DRAM, NAND), 고객 교육</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>기술 Marketing</th>
+                                                        <td>반도체 Business 조사(시장 동향, 기술 분석)</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>SE팀</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>전자·전기공학, 컴퓨터공학</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>연구관리</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>연구관리</th>
+                                                        <td>연구 기획 및 관리, 특허 관리</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>전략기획팀</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>전자·전기공학, 경영학</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-tab-con" id="tabCon02">
+                                    <div class="area white-space-bottom">
+                                        <h5 class="front-cir-icon-tit"><i class="xi-angle-right-min"></i>영업</h5>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>영업</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>영업(국내/해외)</th>
+                                                        <td>영업기획, 마케팅, 신규영업, 상품판매, 판매전략 수립 및 실적관리</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>수출업무 및 지원</th>
+                                                        <td>수출입통관, 영업활동을 위한 최적의 환경 조성 및 제도 관리</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>영업팀</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>경영학, 마케팅학, 무역학, 전자·반도체공학</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-tab-con" id="tabCon03">
+                                    <div class="area white-space-bottom">
+                                        <h5 class="front-cir-icon-tit"><i class="xi-angle-right-min"></i>SCM</h5>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>구매</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>구매관리</th>
+                                                        <td>개발, 양산 자재 구매계약 및 관리, 구매원가관리, 구매전략수립</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>SCM팀</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>마케팅학, 무역학,전자·반도체공학</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>공급망 관리</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>구매관리</th>
+                                                        <td>신규ITEM 및 업체 선정, 공급처 관리</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>해외 생산관리</th>
+                                                        <td>생산관리</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>SCM팀</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>경영학, 물류·유통학, 국제무역학</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-tab-con" id="tabCon04">
+                                    <div class="area white-space-bottom">
+                                        <h5 class="front-cir-icon-tit"><i class="xi-angle-right-min"></i>경영지원</h5>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>인사총무</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>인사</th>
+                                                        <td>우수한 인재 채용, 합리적이고 공정한 평가/보상, 직원 육성 교육, 근태, 신뢰를 바탕으로 바람직한 노사관리</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>총무</th>
+                                                        <td>자산관리, 복리후생, 행사, 보안관리, 용역관리, 규정관리, 대관공서 대응</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>인사총무그룹</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>경영학, 법학, 인사관리론</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>재무</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>회계</th>
+                                                        <td>재무, 세무, 경영방침에 적합한 연간계획 수립</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>자금</th>
+                                                        <td>재무적 안정성 확보 및 운영, 자금관리</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>공시/IR</th>
+                                                        <td>회계정보이용자들의 의사결정을 위한 공시,IR</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>재무그룹</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>경영학, 회계학</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>공무</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>공무</th>
+                                                        <td>산업안전보건법 법규 검토, 수질/대기/폐기물 관리, 현장 환경 개선 및 점검 관리, 공사 관리, 협력사 환경준수평가</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>공무그룹</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>건축학, 기계공학, 전기공학</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>IT</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>시스템 운영 및 구축</th>
+                                                        <td>시스템 검토/선정 및 유지보수, 전산관련 자산관리, 정보화 비전 전략 수립</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>IT 인프라 운영</th>
+                                                        <td>대내외 경영환경과 IT기술 변화에 맞춰 정보화 방향과 IT인프라 체계 구축, 서버관리 및 운영, PC 구매 및 유지관리</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>정보보안</th>
+                                                        <td>정보보안인증운영, 보안관리</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>IT그룹</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>산업공학, 정보보호개론, 운영체제론</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>자재</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>자재</th>
+                                                        <td>자재 입출고, 창고관리, 원가수불관리, 수입통관</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>보세</th>
+                                                        <td>인증관리, 보세통관 및 물류관리, 보세구역 운영</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>자재그룹</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>국제무역학, 물류·유통학, 경영학</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-tab-con" id="tabCon05">
+                                    <div class="area white-space-bottom">
+                                        <h5 class="front-cir-icon-tit"><i class="xi-angle-right-min"></i>제조</h5>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>제조</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>생산관리</th>
+                                                        <td>고객 수요에 따른 생산계획 수립, 양산관리, 협력사/외주관리, 안전,환경관리</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>제조기술</th>
+                                                        <td>양산보드UNIT검사, 종합검사, 불량대응, 원가절감, Repair</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>CS</th>
+                                                        <td>SETUP(설치) 및 이설, 유지관리(개조,Warranty), 고객사대응</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>개발품질</th>
+                                                        <td>생산설계, 양산이관, 품질개선, 생산기술</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>CE팀</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>전자·전기·제어 공학, 기계공학, 메카트로닉스학, 반도체공학</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-column-con clearfix">
+                                            <div class="info-lt-tit"><strong>품질</strong></div>
+                                            <div class="info-rt-con">
+                                                <table>
+                                                    <tr>
+                                                        <th>양산품질</th>
+                                                        <td>공장의 생산성, 품질을 향상시키기 위해 수입 및 출하검사, 부적합품 관리, 계측기 관리, 협력업체 관리</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>품질기획 및 인증관리</th>
+                                                        <td>품질경영 목표, 방침 비전 수립,  ISO 국제표준 유지 및 관리 업무</td>
+                                                    </tr>
+                                                </table>
+                                                <ul class="job-intro-info">
+                                                    <li><em class="front-circle-icon">수행부서</em>품질팀</li>
+                                                    <li><em class="front-circle-icon">관련전공</em>전자·전기·제어 공학, 기계공학, 메카트로닉스학, 반도체공학</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                
+                    </article>	
+                </section>
+            </div>
+
+        </div>
+
+        <footer id="footer" class="font-poppins">
+            <button class="to-top-btn"><em class="blind">TOP</em><i class="xi-long-arrow-up"></i></button>
+            <div class="area-box">
+                <!-- 푸터 상단 -->
+                <article id="footerTop">
+                    <div class="clearfix">
+                        <!-- 푸터상단 왼쪽 -->
+                        <div class="footer-left-con">
+                            <div class="footer-address-info-box">
+                                <div class="footer-address-list">
+                                    <dl>
+                                        <dt>주소</dt>
+                                        <dd>경기 성남시 분당구 동판교로52번길25-7, 1층</dd>
+                                    </dl>
+                                </div>
+                                <div class="footer-address-list">
+                                    <dl>
+                                        <dt>TEL</dt>
+                                        <dd>031-701-9040</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>FAX</dt>
+                                        <dd>031-8016-8644</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>E-MAIL</dt>
+                                        <dd><a href="mailto:chiuup12@gmail.com">chiuup12@gmail.com</a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 푸터상단 오른쪽 -->
+                        <div class="footer-right-con">
+                            <span class="foot-logo"><img src="../images/common/footer_logo.jpg" alt="해피업" /></span>
+                        </div>
+                    </div>
+                </article>
+                <!-- 푸터 하단 -->
+                <article id="footerBottom">
+                    <div class="clearfix">
+                        <!-- 푸터 하단 왼쪽 -->
+                        <article class="footer-left-con">
+                            <div class="footer-copyright">Copyright © 2021 HAPPY UP All Rights Reserved.</div>
+                        </article>
+                    </div>
+                </article>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script>
+        dep1 = 05,
+        dep2 = 01;
+    </script>
+
+    <script type="text/javascript" src="../js/vendor/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../js/plugin/slick.js"></script>
+	<script type="text/javascript" src="../js/plugin/swiper.min.js"></script>
+	<script type="text/javascript" src="../js/plugin/TweenMax.min.js"></script>
+	<script type="text/javascript" src="../js/plugin/splitting.min.js"></script>
+	<script type="text/javascript" src="../js/plugin/waypoints.min.js"></script>
+	<script type="text/javascript" src="../js/functions.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/layer_popup.js"></script>
+	<script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/sub.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../js/vendor/html5shiv.js"></script>
+		<script src="../js/vendor/respond.min.js"></script>
+	<![endif]-->
+
+</body>
+</html>
